@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "MyTutor Calendar Integration",
+    "description": "Adds functionality to MyTutor booking page allowing for bookings to be added to Calendar",
+    "version": "0.1",
+    "content_scripts" : [
+        {
+            "js" : ["./script.js"],
+            "matches" : [
+                "https://www.mytutor.co.uk/tutors/secure/bookings.html"
+            ]
+        }
+    ]
+}
